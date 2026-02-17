@@ -1,34 +1,41 @@
 /* -------------------------------------------
    SCROLL HINT LOGIC
    Shows green arrows after 5s of inactivity, 
-   ONLY on the initial load and BEFORE the first scroll.
+   ONLY on the initial load at the TOP section (#top).
    ------------------------------------------- */
 
 (function () {
     let scrollTimer;
-    let hasInteracted = false;
+    let hasInteractedAtTop = false;
     const hint = document.getElementById('scroll-hint');
 
     if (!hint) return;
 
+    function isAtTop() {
+        // Since fullPage.js is used, we check if the first section is active.
+        // Usually, fullPage adds the 'active' class to the current section.
+        const firstSection = document.querySelector('.section');
+        return firstSection && firstSection.classList.contains('active');
+    }
+
     function showHint() {
-        // Only show if the user hasn't interacted/scrolled yet
-        if (!hasInteracted) {
+        // Only show if we are still at the top and hasn't interacted yet
+        if (!hasInteractedAtTop && isAtTop()) {
             hint.classList.add('active');
         }
     }
 
     function hideHintPermanently() {
-        hasInteracted = true;
+        hasInteractedAtTop = true;
         hint.classList.remove('active');
         clearTimeout(scrollTimer);
 
-        // Remove listeners once we've interacted to save resources
+        // Remove listeners to clean up
         removeListeners();
     }
 
     function resetTimer() {
-        if (!hasInteracted) {
+        if (!hasInteractedAtTop) {
             clearTimeout(scrollTimer);
             scrollTimer = setTimeout(showHint, 5000);
         }
@@ -48,8 +55,9 @@
         window.addEventListener(eventType, hideHintPermanently, { passive: true });
     });
 
-    // Special handling for fullPage.js events
-    $(document).on('onLeave afterLoad afterSlideLoad onSlideLeave', function () {
+    // Also hide if fullPage transitions away from the first section
+    $(document).on('onLeave', function (index, nextIndex, direction) {
+        // nextIndex is 1-based. If moving away from 1, hide it.
         hideHintPermanently();
     });
 
