@@ -1447,9 +1447,16 @@ header .global-nav__sns a:last-child {
 /* --- Overflow wrapper that clips the cover reveal animation --- */
 .image__over {
   width: 100%;
-  height: 100%;
+  height: auto;
   overflow: hidden;
   position: relative
+}
+
+.image__over img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
 }
 
 /* --- Pink/blue cover panels that slide off to reveal the image --- */
@@ -1470,8 +1477,17 @@ header .global-nav__sns a:last-child {
 
 /* --- Background images for each section --- */
 .image--works {
-  background: url(../img/reile.jpg) no-repeat center;
+  background: url(../img/desktopamarena.png) no-repeat center;
   background-size: cover
+}
+
+.image--works .image__over img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .image--about {
@@ -1646,6 +1662,13 @@ header .global-nav__sns a:last-child {
   /* Positions the nav 40px from the left edge of the screen */
   overflow: hidden;
   /* Hides anything that goes beyond the container width */
+  transition: opacity 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94), transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+#fp-nav.fade-out {
+  opacity: 0;
+  transform: translate3d(-30px, -50%, 0);
+  pointer-events: none;
 }
 
 @media screen and (max-width: 1250px) {
@@ -1924,7 +1947,7 @@ header .global-nav__sns a:last-child {
 }
 
 .page-top .image__reile {
-  background: url(../img/reile.jpg) no-repeat center;
+  background: url(../img/desktopamarena.png) no-repeat center;
   background-size: cover
 }
 
@@ -2853,4 +2876,21 @@ header .global-nav__sns a:last-child {
     opacity: 1;
     transform: translateY(10px) scale(1);
   }
+}
+
+.image--works {
+  height: auto;
+}
+
+.image--works .image__over {
+  height: auto;
+  position: relative;
+}
+
+.image--works .image__over img {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  object-fit: contain;
 }

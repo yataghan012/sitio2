@@ -40,7 +40,7 @@
     <nav class="global-nav">
       <ul class="global-nav__list">
         <li><a href="./">HOME</a></li>
-        <li><a href='/reile'>WORKS</a></li>
+        <li><a href='/amarena.html'>WORKS</a></li>
         <li><a href='./about.html'>ABOUT ME</a></li>
         <li><a class="js-contact" href="./#contact">CONTACT</a></li>
         <!--<li class="global-nav__sns"><a href="https://twitter.com/Goldi69s" target="_blank"><i
@@ -126,10 +126,11 @@
                 <h2 class="title__text js-letter">Amarena<br>BAKERY</h2>
                 <div class="border js-letter"><span></span><span class="js-letter"></span></div>
                 <p class="title__lead js-letter">website</p>
-                <div class="btn-wrap js-letter"><a class='btn' href='./amarena.html' target="_blank"
-                    rel="noopener noreferrer">View Project</a></div>
+                <div class="btn-wrap js-letter"><a class='btn' href='./amarena.html' rel="noopener noreferrer">View
+                    Project</a></div>
               </div><a class='image image--works' href='./amarena.html'>
                 <div class="image__over">
+                  <img src="assets/img/desktopamarena.png" alt="Amarena Bakery">
                   <div class="image__cover"></div>
                   <div class="image__cover"></div>
                 </div>
@@ -242,9 +243,11 @@
   <script src="./assets/js/scroll-hint.js"></script>
   <script>
     $(document).on('click', '.js-next-slide', function () {
+      $('#fp-nav').addClass('fade-out');
       $.fn.fullpage.moveSlideRight();
     });
     $(document).on('click', '.js-prev-slide', function () {
+      $('#fp-nav').removeClass('fade-out');
       $.fn.fullpage.moveSlideLeft();
     });
   </script>
