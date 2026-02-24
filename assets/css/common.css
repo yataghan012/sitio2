@@ -789,7 +789,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 40px 40px 0;
+  padding: 20px 40px;
   color: var(--white);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -797,13 +797,35 @@ header {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  z-index: 1000
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  z-index: 1000;
+  background: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 @media screen and (max-width:420px) {
   header {
     padding: 20px 6.25%
   }
+}
+
+/* Glassmorphism only on Amarena and BioArTec pages */
+header:has(~ #barba-wrapper .barba-container[data-header-glass="true"]) {
+  background: rgba(2, 11, 22, 0.4);
+  -webkit-backdrop-filter: blur(1px);
+  backdrop-filter: blur(1px);
+}
+
+header:has(~ #barba-wrapper .barba-container[data-header-glass="true"]).js-color {
+  background: transparent;
+  -webkit-backdrop-filter: none;
+  backdrop-filter: none;
 }
 
 header.js-color a {
@@ -1946,8 +1968,14 @@ header .global-nav__sns a:last-child {
   }
 }
 
-.page-top .image__reile {
+.page-top .image__amarena {
   background: url(../img/desktopamarena.png) no-repeat center;
+  background-size: cover
+}
+
+.page-top .image__bioartec {
+  background: url(../img/bioartec.jpg) no-repeat center;
+  /* Added placeholder or assumed filename */
   background-size: cover
 }
 
