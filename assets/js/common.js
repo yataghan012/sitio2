@@ -141,7 +141,7 @@ $(window).on("load", function () {
             easing: "easeInOutCubic",
             duration: 800,
             complete: function () {
-                $(".loader").addClass(".js-hidden");
+                $(".loader").addClass("js-hidden");
             }
         })
         .add({
@@ -356,26 +356,6 @@ var PageTransitionTop = Barba.BaseTransition.extend({
     finish: function () { this.done() } // Simple finish logic from common2.min.js
 });
 
-var PageTransitionUnder = Barba.BaseTransition.extend({
-    start: function () {
-        this.close().then(this.newContainerLoading).then(this.finish.bind(this))
-    },
-    close: function () {
-        return new Promise(function (resolve) {
-            var closeAnime = anime.timeline({ duration: 500, easing: "easeInOutCubic", autoplay: !1, complete: function () { resolve() } })
-                .add({
-                    targets: ".page-top .image", // Shrinks back to homepage size
-                    width: [imageBig.width, image.width],
-                    height: [imageBig.height, image.height],
-                    marginRight: [0, image.marginRight],
-                    marginLeft: [imageBig.marginLeft, image.marginLeft],
-                    top: [imageBig.top, image.top]
-                });
-            0 !== $(window).scrollTop() ? $("body,html").animate({ scrollTop: 0 }, 500, "swing", closeAnime.play) : closeAnime.play()
-        })
-    },
-    finish: function () { this.done() }
-});
 
 var PageTransitionUnder = Barba.BaseTransition.extend({
     start: function () {
