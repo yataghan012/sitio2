@@ -1471,7 +1471,9 @@ header .global-nav__sns a:last-child {
   width: 100%;
   height: 100%;
   overflow: hidden;
-  position: relative
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .image__over img {
@@ -1479,6 +1481,7 @@ header .global-nav__sns a:last-child {
   height: 100%;
   display: block;
   object-fit: cover;
+  object-position: center;
 }
 
 /* --- Pink/blue cover panels that slide off to reveal the image --- */
@@ -1498,11 +1501,6 @@ header .global-nav__sns a:last-child {
 }
 
 /* --- Background images for each section --- */
-.image--works {
-  background: url(../img/desktopamarena.png) no-repeat center;
-  background-size: cover
-}
-
 .image--about {
   background: url(../img/about.jpg) no-repeat center;
   background-size: cover
@@ -1513,9 +1511,7 @@ header .global-nav__sns a:last-child {
   background-size: cover
 }
 
-.image--works2 {
-  background: url(../img/reile.jpg) no-repeat center;
-  background-size: cover;
+.image--works2 .image__over img {
   filter: saturate(1.5) hue-rotate(45deg);
 }
 
