@@ -2896,19 +2896,9 @@ header .global-nav__sns a:last-child {
   }
 }
 
-.image--works {
-  height: auto;
-}
-
+/* .image--works height is driven by the JS `image` variable at runtime.       */
+/* The visual is handled by background-image (defined above at .image--works). */
+/* The <img> tag inside .image__over must stay hidden (global rule above).     */
 .image--works .image__over {
-  height: auto;
-  position: relative;
-}
-
-.image--works .image__over img {
-  width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
-  object-fit: contain;
+  height: 100%;
 }
