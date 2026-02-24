@@ -1499,8 +1499,20 @@ header .global-nav__sns a:last-child {
 
 /* --- Background images for each section --- */
 .image--works {
-  background: url(../img/desktopamarena.png) no-repeat center;
+  background: url(../img/desktopamarena.jpg) no-repeat center;
   background-size: cover
+}
+
+/* index.html works thumbnail */
+.image--amarena {
+  background: url(../img/desktopamarena.jpg) no-repeat center;
+  background-size: cover;
+}
+
+/* amarena.html page-top hero */
+.image__amarena {
+  background: url(../img/desktopamarena.jpg) no-repeat center;
+  background-size: cover;
 }
 
 .image--about {
@@ -1960,7 +1972,7 @@ header .global-nav__sns a:last-child {
 }
 
 .page-top .image__amarena {
-  background: url(../img/desktopamarena.png) no-repeat center;
+  background: url(../img/desktopamarena.jpg) no-repeat center;
   background-size: cover
 }
 
