@@ -2275,7 +2275,8 @@ header .global-nav__sns a:last-child {
 @media screen and (max-width:420px) {
   .big-image {
     margin-top: 7.2rem;
-    height: 30rem
+    height: auto;
+    aspect-ratio: 16 / 9
   }
 }
 
