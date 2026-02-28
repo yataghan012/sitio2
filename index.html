@@ -245,3 +245,12 @@
   <script src="./assets/js/common.min.js"></script>
   <script src="./assets/js/scroll-hint.js"></script>
   <script>
+    $(document).on('click', '.js-next-slide', function () {
+      $('#fp-nav').addClass('fade-out');
+      $.fn.fullpage.moveSlideRight();
+    });
+    $(document).on('click', '.js-prev-slide', function () {
+      $('#fp-nav').removeClass('fade-out');
+      $.fn.fullpage.moveSlideLeft();
+    });
+  </script>
