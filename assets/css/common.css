@@ -1103,7 +1103,7 @@ header .global-nav__sns a:last-child {
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   border-radius: 30px;
-  padding: 4px;
+  padding: 10px 10px;
   position: relative;
   cursor: pointer;
   user-select: none;
