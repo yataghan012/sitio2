@@ -1973,12 +1973,12 @@ header .global-nav__sns a:last-child {
 
 .page-top .image__amarena {
   background: url(../img/desktopamarena.jpg) no-repeat center;
-  background-size: cover
+  background-size: 100% auto;
 }
 
 .page-top .image__bioartec {
   background: url(../img/reile.jpg) no-repeat center;
-  background-size: cover
+  background-size: 100% auto;
 }
 
 .page-top .image__about {
