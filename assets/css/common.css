@@ -1528,7 +1528,6 @@ header .global-nav__sns a:last-child {
 .image--works2 {
   background: url(../img/reile.jpg) no-repeat center;
   background-size: cover;
-  filter: saturate(1.5) hue-rotate(45deg);
 }
 
 /* --- Large page number (01, 02, 03) overlapping the image --- */
