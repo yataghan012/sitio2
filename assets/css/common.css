@@ -1166,6 +1166,7 @@ header .global-nav__sns a:last-child {
   z-index: 1;
   letter-spacing: 0.1em;
   transition: opacity 0.3s, color 0.3s;
+  padding: 5px 7px;
 }
 
 @media screen and (max-width: 420px) {
