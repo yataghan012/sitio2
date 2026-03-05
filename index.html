@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en_US">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -39,10 +39,10 @@
     </div>
     <nav class="global-nav">
       <ul class="global-nav__list">
-        <li><a href="./">HOME</a></li>
-        <li><a href='/amarena.html'>WORKS</a></li>
-        <li><a href='./about.html'>ABOUT ME</a></li>
-        <li><a class="js-contact" href="./#contact">CONTACT</a></li>
+        <li><a href="./" data-es="INICIO" data-en="HOME">INICIO</a></li>
+        <li><a href='/amarena.html' data-es="TRABAJOS" data-en="WORKS">TRABAJOS</a></li>
+        <li><a href='./about.html' data-es="SOBRE MÍ" data-en="ABOUT ME">SOBRE MÍ</a></li>
+        <li><a class="js-contact" href="./#contact" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a></li>
         <!--<li class="global-nav__sns"><a href="https://twitter.com/Goldi69s" target="_blank"><i
               class="fab fa-twitter"></i></a><a href="https://dribbble.com/kuon_yagi" target="_blank"><i
               class="fab fa-dribbble"></i></a></li>-->
@@ -59,7 +59,8 @@
             <div class="title title--top">
               <h1 class="title__text js-letter" style="transform: translateX(0%) translateZ(0px);">TOMÁS<br>P</h1>
               <div class="border js-letter"><span></span><span class="js-letter"></span></div>
-              <p class="title__lead js-letter">Web Design /<br> Marketing</p>
+              <p class="title__lead js-letter" data-es-html="Diseño Web /<br> Marketing"
+                data-en-html="Web Design /<br> Marketing">Diseño Web /<br> Marketing</p>
             </div>
             <div class="moon">
               <div class="moon__img js-parallax-moon">
@@ -125,9 +126,9 @@
               <div class="title">
                 <h2 class="title__text js-letter">Amarena<br>BAKERY</h2>
                 <div class="border js-letter"><span></span><span class="js-letter"></span></div>
-                <p class="title__lead js-letter">website / <br> SEO</p>
-                <div class="btn-wrap js-letter"><a class='btn' href='./amarena.html' rel="noopener noreferrer">View
-                    Project</a></div>
+                <p class="title__lead js-letter" data-es="sitio web / SEO" data-en="website / SEO">sitio web / SEO</p>
+                <div class="btn-wrap js-letter"><a class='btn' href='./amarena.html' rel="noopener noreferrer"
+                    data-es="Ver Proyecto" data-en="View Project">Ver Proyecto</a></div>
               </div><a class='image image--amarena' href='./amarena.html'>
                 <div class="image__over">
                   <div class="image__cover"></div>
@@ -149,8 +150,9 @@
               <div class="title">
                 <h2 class="title__text js-letter">BioArTec<br>Orthopedic</h2>
                 <div class="border js-letter"><span></span><span class="js-letter"></span></div>
-                <p class="title__lead js-letter">website / <br> SEO</p>
-                <div class="btn-wrap js-letter"><a class='btn' href='./bioartec.html'>View Project</a></div>
+                <p class="title__lead js-letter" data-es="sitio web / SEO" data-en="website / SEO">sitio web / SEO</p>
+                <div class="btn-wrap js-letter"><a class='btn' href='./bioartec.html' data-es="Ver Proyecto"
+                    data-en="View Project">Ver Proyecto</a></div>
               </div><a class='image image--works2' href='./bioartec.html'>
                 <div class="image__over">
                   <img src="assets/img/reile.jpg" alt="BioArTec Orthopedic">
@@ -172,10 +174,14 @@
         <div class="section">
           <div class="fullpage__slide">
             <div class="title">
-              <h2 class="title__text js-letter">About Me</h2>
+              <h2 class="title__text js-letter" data-es="Sobre Mí" data-en="About Me">Sobre Mí</h2>
               <div class="border js-letter"><span></span><span class="js-letter"></span></div>
-              <p class="title__lead js-letter">I love Design, Technology,<br>Photography and Story.</p>
-              <div class="btn-wrap js-letter"><a class='btn' href='./about.html'>Show me more</a></div>
+              <p class="title__lead js-letter"
+                data-es-html="Me apasionan el Diseño, la Tecnología,<br>la Fotografía y las Historias."
+                data-en-html="I love Design, Technology,<br>Photography and Story.">Me apasionan el Diseño, la
+                Tecnología,<br>la Fotografía y las Historias.</p>
+              <div class="btn-wrap js-letter"><a class='btn' href='./about.html' data-es="Conocerme más"
+                  data-en="Show me more">Conocerme más</a></div>
             </div><a class='image image--about' href='./about.html'>
               <div class="image__over">
                 <div class="image__cover"></div>
@@ -187,7 +193,7 @@
         <div class="section">
           <div class="fullpage__slide">
             <div class="title">
-              <h2 class="title__text js-letter">Get In Touch</h2>
+              <h2 class="title__text js-letter" data-es="Contacto" data-en="Get In Touch">Contacto</h2>
               <div class="border js-letter"><span></span><span class="js-letter"></span></div>
               <ul>
                 <li class="js-letter"><a href="mailto:thiazzi@tuta.io">thiazzi@tuta.io</a></li>
@@ -241,6 +247,7 @@
   <script src="./assets/js/parallax.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
   <script src="./assets/js/common.min.js"></script>
+  <script src="./assets/js/lang.js"></script>
   <script src="./assets/js/scroll-hint.js"></script>
   <script>
     $(document).on('click', '.js-next-slide', function () {

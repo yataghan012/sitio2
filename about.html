@@ -1,46 +1,49 @@
 <!DOCTYPE html>
-<html lang="en_US>
+<html lang="es">
 
 <head>
   <meta charset=" UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<meta property="og:type" content="website">
-<meta property="og:description" content="Tomás P / Web designer / Digital Marketer">
-<meta property="og:image" content="https://kuon.space/assets/img/ogp.png">
-<!--  <meta name="twitter:card" content="summary_large_image">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:type" content="website">
+  <meta property="og:description" content="Tomás P / Web designer / Digital Marketer">
+  <meta property="og:image" content="https://kuon.space/assets/img/ogp.png">
+  <!--  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@goldi69s"> -->
-<meta property="og:site_name" content="Tomás P Portfolio">
-<meta property="og:locale" content="en_US">
-<link rel="stylesheet" href="./assets/css/jquery.fullPage.css">
-<link rel="stylesheet" href="./assets/css/common.css">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
-<link rel="shortcut icon" href="/favicon.ico">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<meta property="og:url" content="https://kuon.space/about.html">
-<meta property="og:title" content="About Me | TOMAS P PORTFOLIO">
-<title>About Me | TOMAS P PORTFOLIO</title><!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115155070-1"></script>
-<script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-115155070-1');</script>
+  <meta property="og:site_name" content="Tomás P Portfolio">
+  <meta property="og:locale" content="en_US">
+  <link rel="stylesheet" href="./assets/css/jquery.fullPage.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <meta property="og:url" content="https://kuon.space/about.html">
+  <meta property="og:title" content="About Me | TOMAS P PORTFOLIO">
+  <title>About Me | TOMAS P PORTFOLIO</title><!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115155070-1"></script>
+  <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-115155070-1');</script>
 </head>
 
 <body>
-  <header><a class="name" href="./">Tomas P</a>
+  <header><a class="name" href="./">Tomás P</a>
     <div class="wrap">
-      <!--    <div class="icons"><a href="https://www.instagram.com/kuon_y/" target="_blank"><i
-            class="fab fa-instagram"></i></a><a href="https://twitter.com/Goldi69s" target="_blank"><i
-            class="fab fa-twitter"></i></a><a href="https://dribbble.com/kuon_yagi" target="_blank"><i
-            class="fab fa-dribbble"></i></a><a href="https://www.wantedly.com/users/48483598"
-          target="_blank">Wantedly</a></div> -->
+      <div class="lang-switcher">
+        <input type="checkbox" id="lang-toggle" class="lang-toggle__input">
+        <label for="lang-toggle" class="lang-toggle">
+          <span class="lang-toggle__text lang-toggle__text--es">ES</span>
+          <span class="lang-toggle__slider"></span>
+          <span class="lang-toggle__text lang-toggle__text--en">EN</span>
+        </label>
+      </div>
       <div class="menuIcon js-menuBtn"></div>
     </div>
     <nav class="global-nav">
       <ul class="global-nav__list">
-        <li><a href="./">HOME</a></li>
-        <li><a href='amarena.html'>WORKS</a></li>
-        <li><a href='/about'>ABOUT ME</a></li>
-        <li><a class="js-contact" href="./#contact">CONTACT</a></li>
+        <li><a href="./" data-es="INICIO" data-en="HOME">INICIO</a></li>
+        <li><a href='amarena.html' data-es="TRABAJOS" data-en="WORKS">TRABAJOS</a></li>
+        <li><a href='./about.html' data-es="SOBRE MÍ" data-en="ABOUT ME">SOBRE MÍ</a></li>
+        <li><a class="js-contact" href="./#contact" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a></li>
         <!--  <li class="global-nav__sns"><a href="https://www.instagram.com/kuon_y/" target="_blank"><i
               class="fab fa-instagram"></i></a><a href="https://twitter.com/Goldi69s" target="_blank"><i
               class="fab fa-twitter"></i></a><a href="https://dribbble.com/kuon_yagi" target="_blank"><i
@@ -61,11 +64,14 @@
               </g>
             </svg></a>
           <div class="title">
-            <h2 class="title__text">About Me</h2>
+            <h2 class="title__text" data-es="Sobre Mí" data-en="About Me">Sobre Mí</h2>
             <div class="border js-toRight"><span></span><span></span></div>
-            <p class="title__lead">I love Design, Technology,<br>Photography and Story.</p>
+            <p class="title__lead"
+              data-es-html="Me apasionan el Diseño, la Tecnología,<br>la Fotografía y las Historias."
+              data-en-html="I love Design, Technology,<br>Photography and Story.">Me apasionan el Diseño, la
+              Tecnología,<br>la Fotografía y las Historias.</p>
             <div class="btn-wrap"><a class="btn" href="https://www.linkedin.com/in/tom%C3%A1s-brasco-330613355/"
-                target="_balnk">Scout</a></div>
+                target="_balnk" data-es="Ver perfil" data-en="Scout">Ver perfil</a></div>
           </div>
           <div class="image image__about"></div>
         </div>
@@ -75,18 +81,20 @@
           <div class="text text--top">
             <p class="heading-num">01</p>
             <div class="text__wrap text__wrap--top content">
-              <h2 class="heading heading--top">WHO I AM</h2>
+              <h2 class="heading heading--top" data-es="QUIÉN SOY" data-en="WHO I AM">QUIÉN SOY</h2>
               <div class="who__wrap">
                 <div class="who__name">
                   <p class="who__en">Tomás P</p>
                 </div>
-                <p class="who__text"> Born in Córdoba, Argentina, in 1998. After graduating from high school, he began
-                  working in orthopedics as a neuronavigation technician in operating rooms. Later, he went freelance,
-                  working in electrical and
-                  electronic security, where he was responsible for marketing and sales. He acquired technical knowledge
-                  to improve his online presence and boost sales. In 2026, he started working as a freelance web
-                  designer. Specialized in providing one-stop services that include photography, design, and coding.
-                  Passionate about helping businesses grow and succeed online.
+                <p class="who__text"
+                  data-es="Nacido en Córdoba, Argentina, en 1998. Luego de terminar el secundario, comenzó a trabajar en ortopedia como técnico de neuronavegación en quirófanos. Más tarde, trabajó de manera independiente en seguridad eléctrica y electrónica, donde fue responsable de marketing y ventas. Adquirió conocimientos técnicos para mejorar su presencia online e impulsar las ventas. En 2026, comenzó a trabajar como diseñador web freelance. Especializado en ofrecer servicios integrales que incluyen fotografía, diseño y programación. Apasionado por ayudar a las empresas a crecer y triunfar en internet."
+                  data-en="Born in Córdoba, Argentina, in 1998. After graduating from high school, he began working in orthopedics as a neuronavigation technician in operating rooms. Later, he went freelance, working in electrical and electronic security, where he was responsible for marketing and sales. He acquired technical knowledge to improve his online presence and boost sales. In 2026, he started working as a freelance web designer. Specialized in providing one-stop services that include photography, design, and coding. Passionate about helping businesses grow and succeed online.">
+                  Nacido en Córdoba, Argentina, en 1998. Luego de terminar el secundario, comenzó a trabajar en
+                  ortopedia como técnico de neuronavegación en quirófanos. Más tarde, trabajó de manera independiente en
+                  seguridad eléctrica y electrónica, donde fue responsable de marketing y ventas. Adquirió conocimientos
+                  técnicos para mejorar su presencia online e impulsar las ventas. En 2026, comenzó a trabajar como
+                  diseñador web freelance. Especializado en ofrecer servicios integrales que incluyen fotografía, diseño
+                  y programación. Apasionado por ayudar a las empresas a crecer y triunfar en internet.
                 </p>
                 <div class="who__image"><img src="./assets/img/portrait.jpg" alt="Tomas P"></div>
               </div>
@@ -97,45 +105,53 @@
           <div class="text">
             <p class="heading-num">02</p>
             <div class="text__wrap content">
-              <h2 class="heading">PASSION</h2>
+              <h2 class="heading" data-es="PASIÓN" data-en="PASSION">PASIÓN</h2>
             </div>
           </div>
           <div class="content content--mlarge">
             <ul class="passion__list">
               <li class="passion__item">
                 <div class="passion__image"><img src="./assets/img/design-skills.svg" alt="design"></div>
-                <h3 class="sub-title">DESIGN</h3>
-                <p class="passion__text">
-                  Great products and services can feel like pure magic — transforming complexity into simplicity,
-                  solving real problems in ways that seem almost effortless. But even the most powerful magic needs a
-                  wand. That's how I see design: not as decoration, but as the essential bridge between a brilliant
-                  solution and the people who need it. Every day, I strive to craft interfaces that feel intuitive,
-                  invisible, and alive — experiences that put that magic directly into the user's hands, shaped
-                  perfectly to fit them.
-                </p>
+                <h3 class="sub-title" data-es="DISEÑO" data-en="DESIGN">DISEÑO</h3>
+                <p class="passion__text"
+                  data-es="Los mejores productos y servicios pueden sentirse como magia pura: transforman la complejidad en simplicidad y resuelven problemas reales de manera casi sin esfuerzo. Pero incluso la magia más poderosa necesita una varita. Así veo el diseño: no como decoración, sino como el puente esencial entre una solución brillante y las personas que la necesitan. Cada día me esfuerzo por crear interfaces que se sientan intuitivas, invisibles y vivas, experiencias que ponen esa magia directamente en manos del usuario, perfectamente adaptadas a ellas."
+                  data-en="Great products and services can feel like pure magic — transforming complexity into simplicity, solving real problems in ways that seem almost effortless. But even the most powerful magic needs a wand. That's how I see design: not as decoration, but as the essential bridge between a brilliant solution and the people who need it. Every day, I strive to craft interfaces that feel intuitive, invisible, and alive — experiences that put that magic directly into the user's hands, shaped perfectly to fit them.">
+                  Los mejores productos y servicios pueden sentirse como magia pura: transforman la complejidad en
+                  simplicidad y resuelven problemas reales de manera casi sin esfuerzo. Pero incluso la magia más
+                  poderosa necesita una varita. Así veo el diseño: no como decoración, sino como el puente esencial
+                  entre una solución brillante y las personas que la necesitan. Cada día me esfuerzo por crear
+                  interfaces que se sientan intuitivas, invisibles y vivas, experiencias que ponen esa magia
+                  directamente en manos del usuario, perfectamente adaptadas a ellas.</p>
               </li>
               <li class="passion__item">
                 <div class="passion__image"><img src="./assets/img/tech.svg" alt="TECHNOLOGY"></div>
-                <h3 class="sub-title">TECHNOLOGY</h3>
-                <p class="passion__text">
-                  As the saying goes, "Any sufficiently advanced technology is indistinguishable from magic." And I
-                  believe that wholeheartedly. Technology has an unparalleled power to reshape the world and transform
-                  lives — and that potential drives everything I do. I'm committed to staying ahead of the curve,
-                  embracing change not as a challenge, but as an opportunity. Because innovation doesn't spread on its
-                  own: it's the shared mission of engineers and designers alike to bring it to the people who need it
-                  most. That's the spark I bring to every project.
-                </p>
+                <h3 class="sub-title" data-es="TECNOLOGÍA" data-en="TECHNOLOGY">TECNOLOGÍA</h3>
+                <p class="passion__text" data-es="Como dice el dicho, \" Cualquier tecnología suficientemente avanzada
+                  es indistinguible de la magia.\". Y lo creo de todo corazón. La tecnología tiene un poder sin igual
+                  para transformar el mundo y cambiar vidas, y ese potencial impulsa todo lo que hago. Estoy
+                  comprometido a mantenerme a la vanguardia, abrazando el cambio no como un desafío, sino como una
+                  oportunidad. Porque la innovación no se difunde sola: es la misión compartida de ingenieros y
+                  diseñadores llevarla a quienes más la necesitan. Esa es la chispa que aporto a cada proyecto."
+                  data-en="As the saying goes, &quot;Any sufficiently advanced technology is indistinguishable from magic.&quot; And I believe that wholeheartedly. Technology has an unparalleled power to reshape the world and transform lives — and that potential drives everything I do. I'm committed to staying ahead of the curve, embracing change not as a challenge, but as an opportunity. Because innovation doesn't spread on its own: it's the shared mission of engineers and designers alike to bring it to the people who need it most. That's the spark I bring to every project.">
+                  Como dice el dicho, "Cualquier tecnología suficientemente avanzada es indistinguible de la magia.". Y
+                  lo creo de todo corazón. La tecnología tiene un poder sin igual para transformar el mundo y cambiar
+                  vidas, y ese potencial impulsa todo lo que hago. Estoy comprometido a mantenerme a la vanguardia,
+                  abrazando el cambio no como un desafío, sino como una oportunidad. Porque la innovación no se difunde
+                  sola: es la misión compartida de ingenieros y diseñadores llevarla a quienes más la necesitan. Esa es
+                  la chispa que aporto a cada proyecto.</p>
               </li>
               <li class="passion__item">
                 <div class="passion__image"><img src="./assets/img/book-open.svg" alt="STORY"></div>
-                <h3 class="sub-title">STORY</h3>
-                <p class="passion__text">
-                  Behind every great product lives a narrative — a journey from confusion to clarity, from frustration
-                  to delight. Design and brand are not just visual choices; they are the chapters, the rhythm, and the
-                  voice that guide a user through that journey. I believe that the most powerful interfaces don't just
-                  function — they resonate. They make the user feel understood, seen, and accompanied. When design and
-                  story become one, a product stops being a tool and starts being an experience worth remembering.
-                </p>
+                <h3 class="sub-title" data-es="HISTORIA" data-en="STORY">HISTORIA</h3>
+                <p class="passion__text"
+                  data-es="Detrás de todo gran producto vive una narrativa: un viaje desde la confusión hacia la claridad, desde la frustración hacia el deleite. El diseño y la marca no son simples elecciones visuales; son los capítulos, el ritmo y la voz que guían al usuario en ese camino. Creo que las interfaces más poderosas no solo funcionan, sino que resuenan. Hacen que el usuario se sienta comprendido, visto y acompañado. Cuando diseño e historia se fusionan, un producto deja de ser una herramienta y se convierte en una experiencia que vale la pena recordar."
+                  data-en="Behind every great product lives a narrative — a journey from confusion to clarity, from frustration to delight. Design and brand are not just visual choices; they are the chapters, the rhythm, and the voice that guide a user through that journey. I believe that the most powerful interfaces don't just function — they resonate. They make the user feel understood, seen, and accompanied. When design and story become one, a product stops being a tool and starts being an experience worth remembering.">
+                  Detrás de todo gran producto vive una narrativa: un viaje desde la confusión hacia la claridad, desde
+                  la frustración hacia el deleite. El diseño y la marca no son simples elecciones visuales; son los
+                  capítulos, el ritmo y la voz que guían al usuario en ese camino. Creo que las interfaces más poderosas
+                  no solo funcionan, sino que resuenan. Hacen que el usuario se sienta comprendido, visto y acompañado.
+                  Cuando diseño e historia se fusionan, un producto deja de ser una herramienta y se convierte en una
+                  experiencia que vale la pena recordar.</p>
               </li>
             </ul>
           </div>
@@ -144,7 +160,7 @@
           <div class="text">
             <p class="heading-num">03</p>
             <div class="text__wrap content">
-              <h2 class="heading">SKILL SET</h2>
+              <h2 class="heading" data-es="HABILIDADES" data-en="SKILL SET">HABILIDADES</h2>
             </div>
           </div>
           <div class="content content--mlarge skill-set__flex">
@@ -253,6 +269,7 @@
   <script src="./assets/js/parallax.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
   <script src="./assets/js/common.min.js"></script>
+  <script src="./assets/js/lang.js"></script>
 </body>
 
 </html>

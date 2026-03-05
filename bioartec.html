@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -26,21 +26,24 @@
 </head>
 
 <body>
-  <header><a class="name" href="index.html">Tomas Brasco</a>
+  <header><a class="name" href="index.html">Tomás P</a>
     <div class="wrap">
-      <!--  <div class="icons"><a href="https://www.instagram.com/kuon_y/" target="_blank"><i
-            class="fab fa-instagram"></i></a><a href="https://twitter.com/Goldi69s" target="_blank"><i
-            class="fab fa-twitter"></i></a><a href="https://dribbble.com/kuon_yagi" target="_blank"><i
-            class="fab fa-dribbble"></i></a><a href="https://www.wantedly.com/users/48483598"
-          target="_blank">Wantedly</a></div> -->
+      <div class="lang-switcher">
+        <input type="checkbox" id="lang-toggle" class="lang-toggle__input">
+        <label for="lang-toggle" class="lang-toggle">
+          <span class="lang-toggle__text lang-toggle__text--es">ES</span>
+          <span class="lang-toggle__slider"></span>
+          <span class="lang-toggle__text lang-toggle__text--en">EN</span>
+        </label>
+      </div>
       <div class="menuIcon js-menuBtn"></div>
     </div>
     <nav class="global-nav">
       <ul class="global-nav__list">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href='amarena.html'>WORKS</a></li>
-        <li><a href='about.html'>ABOUT ME</a></li>
-        <li><a class="js-contact" href="index.html#contact">CONTACT</a></li>
+        <li><a href="index.html" data-es="INICIO" data-en="HOME">INICIO</a></li>
+        <li><a href='amarena.html' data-es="TRABAJOS" data-en="WORKS">TRABAJOS</a></li>
+        <li><a href='about.html' data-es="SOBRE MÍ" data-en="ABOUT ME">SOBRE MÍ</a></li>
+        <li><a class="js-contact" href="index.html#contact" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a></li>
         <!--<li class="global-nav__sns"><a href="https://www.instagram.com/kuon_y/" target="_blank"><i
               class="fab fa-instagram"></i></a><a href="https://twitter.com/Goldi69s" target="_blank"><i
               class="fab fa-twitter"></i></a><a href="https://dribbble.com/kuon_yagi" target="_blank"><i
@@ -63,9 +66,9 @@
           <div class="title">
             <h2 class="title__text">BioArTec<br>Orthopedic</h2>
             <div class="border js-toRight"><span></span><span></span></div>
-            <p class="title__lead">website / SEO</p>
-            <div class="btn-wrap"><a class="btn" href="https://yataghan012.github.io/sitio1" target="_balnk">Visit
-                site</a>
+            <p class="title__lead" data-es="sitio web / SEO" data-en="website / SEO">sitio web / SEO</p>
+            <div class="btn-wrap"><a class="btn" href="https://yataghan012.github.io/sitio1" target="_balnk"
+                data-es="Visitar sitio" data-en="Visit site">Visitar sitio</a>
             </div>
           </div>
           <div class="image image__bioartec"></div>
@@ -77,17 +80,20 @@
           <div class="content meta__text-wrap">
             <ul class="meta__text">
               <li>
-                <p class="small-title">ROLE</p>
-                <p>UI design / Coding / SEO</p>
+                <p class="small-title" data-es="ROL" data-en="ROLE">ROL</p>
+                <p data-es="Diseño UI / Programación / SEO" data-en="UI design / Coding / SEO">Diseño UI / Programación
+                  / SEO</p>
               </li>
               <li>
-                <p class="small-title">DATE</p>
+                <p class="small-title" data-es="FECHA" data-en="DATE">FECHA</p>
                 <p>FEB 2026</p>
               </li>
               <li>
-                <p class="small-title">OVERVIEW</p>
-                <p>We created a website for BioArTec, an orthopedic surgery technology company located in Córdoba,
-                  Argentina</p>
+                <p class="small-title" data-es="RESUMEN" data-en="OVERVIEW">RESUMEN</p>
+                <p data-es="Creamos un sitio web para BioArTec, una empresa de tecnología para cirugía ortopédica ubicada en Córdoba, Argentina"
+                  data-en="We created a website for BioArTec, an orthopedic surgery technology company located in Córdoba, Argentina">
+                  Creamos un sitio web para BioArTec, una empresa de tecnología para cirugía ortopédica ubicada en
+                  Córdoba, Argentina</p>
               </li>
             </ul>
           </div>
@@ -96,31 +102,33 @@
         <div class="text">
           <p class="heading-num">01</p>
           <div class="text__wrap">
-            <h2 class="heading">CONCEPT</h2>
-            <p class="text__works">
+            <h2 class="heading" data-es="CONCEPTO" data-en="CONCEPT">CONCEPTO</h2>
+            <p class="text__works"
+              data-es="Al estar orientados principalmente a profesionales quirúrgicos y clínicas especializadas, buscamos evitar la estética fría y genérica de los catálogos médicos tradicionales. En su lugar, apostamos por una imagen moderna y de precisión, con referencias a estándares internacionales de vanguardia. El visual principal muestra los instrumentos e implantes tal como se utilizan en el quirófano, transmitiendo tanto el cuidado artesanal como la excelencia técnica, con una estética cercana a la de una publicación médica de alto nivel. El color principal fue tomado del acabado metálico de los implantes, levemente oscurecido, para mantener coherencia visual entre los productos reales y la identidad del sitio."
+              data-en="Since the target audience is primarily surgical professionals and specialized clinics, we sought to avoid the cold, generic aesthetic of traditional medical catalogs. Instead, we aimed for a modern, precision-driven image, with references to cutting-edge international standards. The main visual shows the instruments and implants as used in the operating room, conveying both artisanal care and technical excellence, with an aesthetic close to that of a high-level medical publication. The primary color was taken from the metallic finish of the implants, slightly darkened, to maintain visual coherence between the actual products and the site’s identity.">
               Al estar orientados principalmente a profesionales quirúrgicos y clínicas especializadas, buscamos evitar
               la estética fría y genérica de los catálogos médicos tradicionales. En su lugar, apostamos por una imagen
               moderna y de precisión, con referencias a estándares internacionales de vanguardia. El visual principal
               muestra los instrumentos e implantes tal como se utilizan en el quirófano, transmitiendo tanto el cuidado
               artesanal como la excelencia técnica, con una estética cercana a la de una publicación médica de alto
               nivel. El color principal fue tomado del acabado metálico de los implantes, levemente oscurecido, para
-              mantener coherencia visual entre los productos reales y la identidad del sitio.
-            </p>
+              mantener coherencia visual entre los productos reales y la identidad del sitio.</p>
           </div>
         </div>
         <div class="big-image"></div>
         <div class="text">
           <p class="heading-num">02</p>
           <div class="text__wrap">
-            <h2 class="heading heading--left">DEVELOPMENT</h2>
-            <p class="text__works">
+            <h2 class="heading heading--left" data-es="DESARROLLO" data-en="DEVELOPMENT">DESARROLLO</h2>
+            <p class="text__works"
+              data-es="En el desarrollo del sitio evitamos soluciones complejas innecesarias, priorizando herramientas probadas y eficientes. Para las animaciones de scroll utilizamos la librería AOS, logrando una experiencia de navegación fluida y profesional. La integración con Instagram permite mostrar contenido actualizado directamente desde el feed oficial. Como gestor de contenidos adoptamos WordPress, lo que permite al equipo de BioArTec publicar noticias y novedades del sector desde cualquier dispositivo, incluso desde el celular."
+              data-en="In the development of the site we avoided unnecessary complex solutions, prioritizing proven and efficient tools. For scroll animations we used the AOS library, achieving a smooth and professional browsing experience. The Instagram integration allows updated content to be displayed directly from the official feed. As a content manager we adopted WordPress, which allows the BioArTec team to publish news and industry updates from any device, even from a smartphone.">
               En el desarrollo del sitio evitamos soluciones complejas innecesarias, priorizando herramientas probadas y
               eficientes. Para las animaciones de scroll utilizamos la librería AOS, logrando una experiencia de
               navegación fluida y profesional. La integración con Instagram permite mostrar contenido actualizado
               directamente desde el feed oficial. Como gestor de contenidos adoptamos WordPress, lo que permite al
               equipo de BioArTec publicar noticias y novedades del sector desde cualquier dispositivo, incluso desde el
-              celular.
-            </p>
+              celular.</p>
           </div>
         </div>
         <div class="kamp">
@@ -129,7 +137,8 @@
             <li><img src="assets/img/reile_about.jpg" alt="ABOUT"></li>
           </ul>
         </div>
-        <div class="content content--mlarge back-btn-wrap"><a class="back-btn" href="index.html#works">BACK</a></div>
+        <div class="content content--mlarge back-btn-wrap"><a class="back-btn" href="index.html#works" data-es="VOLVER"
+            data-en="BACK">VOLVER</a></div>
       </section>
     </div>
   </main>
@@ -139,6 +148,7 @@
   <script src="assets/js/parallax.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
   <script src="assets/js/common.min.js"></script>
+  <script src="assets/js/lang.js"></script>
 </body>
 
 </html>

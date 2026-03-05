@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="es">
 
 <head>
   <meta charset="UTF-8">
@@ -26,21 +26,24 @@
 </head>
 
 <body>
-  <header><a class="name" href="index.html">Tomas P</a>
+  <header><a class="name" href="index.html">Tomás P</a>
     <div class="wrap">
-      <!--  <div class="icons"><a href="https://www.instagram.com/kuon_y/" target="_blank"><i
-            class="fab fa-instagram"></i></a><a href="https://twitter.com/Goldi69s" target="_blank"><i
-            class="fab fa-twitter"></i></a><a href="https://dribbble.com/kuon_yagi" target="_blank"><i
-            class="fab fa-dribbble"></i></a><a href="https://www.wantedly.com/users/48483598"
-          target="_blank">Wantedly</a></div> -->
+      <div class="lang-switcher">
+        <input type="checkbox" id="lang-toggle" class="lang-toggle__input">
+        <label for="lang-toggle" class="lang-toggle">
+          <span class="lang-toggle__text lang-toggle__text--es">ES</span>
+          <span class="lang-toggle__slider"></span>
+          <span class="lang-toggle__text lang-toggle__text--en">EN</span>
+        </label>
+      </div>
       <div class="menuIcon js-menuBtn"></div>
     </div>
     <nav class="global-nav">
       <ul class="global-nav__list">
-        <li><a href="index.html">HOME</a></li>
-        <li><a href='amarena.html'>WORKS</a></li>
-        <li><a href='about.html'>ABOUT ME</a></li>
-        <li><a class="js-contact" href="index.html#contact">CONTACT</a></li>
+        <li><a href="index.html" data-es="INICIO" data-en="HOME">INICIO</a></li>
+        <li><a href='amarena.html' data-es="TRABAJOS" data-en="WORKS">TRABAJOS</a></li>
+        <li><a href='about.html' data-es="SOBRE MÍ" data-en="ABOUT ME">SOBRE MÍ</a></li>
+        <li><a class="js-contact" href="index.html#contact" data-es="CONTACTO" data-en="CONTACT">CONTACTO</a></li>
         <!--<li class="global-nav__sns"><a href="https://www.instagram.com/kuon_y/" target="_blank"><i
               class="fab fa-instagram"></i></a><a href="https://twitter.com/Goldi69s" target="_blank"><i
               class="fab fa-twitter"></i></a><a href="https://dribbble.com/kuon_yagi" target="_blank"><i
@@ -63,9 +66,9 @@
           <div class="title">
             <h2 class="title__text">Amarena<br> BAKERY</h2>
             <div class="border js-toRight"><span></span><span></span></div>
-            <p class="title__lead">website</p>
-            <div class="btn-wrap"><a class="btn" href="https://amarenapasteleria.netlify.app" target="_blank">Visit
-                site</a>
+            <p class="title__lead" data-es="sitio web" data-en="website">sitio web</p>
+            <div class="btn-wrap"><a class="btn" href="https://amarenapasteleria.netlify.app" target="_blank"
+                data-es="Visitar sitio" data-en="Visit site">Visitar sitio</a>
             </div>
           </div>
           <div class="image image__amarena"></div>
@@ -77,16 +80,18 @@
           <div class="content meta__text-wrap">
             <ul class="meta__text">
               <li>
-                <p class="small-title">ROLE</p>
-                <p>UI design / Coding</p>
+                <p class="small-title" data-es="ROL" data-en="ROLE">ROL</p>
+                <p data-es="Diseño UI / Programación" data-en="UI design / Coding">Diseño UI / Programación</p>
               </li>
               <li>
-                <p class="small-title">DATE</p>
-                <p>JAN 2026</p>
+                <p class="small-title" data-es="FECHA" data-en="DATE">FECHA</p>
+                <p>ENE 2026</p>
               </li>
               <li>
-                <p class="small-title">OVERVIEW</p>
-                <p>We created a website for Amarena Bakery, a bakery located in Córdoba, Argentina</p>
+                <p class="small-title" data-es="RESUMEN" data-en="OVERVIEW">RESUMEN</p>
+                <p data-es="Creamos un sitio web para Amarena Bakery, una panadería ubicada en Córdoba, Argentina"
+                  data-en="We created a website for Amarena Bakery, a bakery located in Córdoba, Argentina">Creamos un
+                  sitio web para Amarena Bakery, una panadería ubicada en Córdoba, Argentina</p>
               </li>
             </ul>
           </div>
@@ -95,34 +100,38 @@
         <div class="text">
           <p class="heading-num">01</p>
           <div class="text__wrap">
-            <h2 class="heading">CONCEPT</h2>
-            <p class="text__works">
-              Since the bakery is located in Córdoba and targets customers looking for a special, artisanal experience,
-              we aimed for a warm yet refined atmosphere rather than the sterile look of a typical pastry shop — drawing
-              inspiration from the aesthetic of European patisseries. For the key visual, we photographed a carefully
-              arranged selection of the bakery's handcrafted products and ingredients, conveying both craftsmanship and
-              attention to detail while achieving a magazine-worthy, editorial feel. The main color palette was derived
-              from the tones found inside the bakery itself, subtly deepened, so that the website's visual identity
-              feels like a seamless extension of the physical space.
-            </p>
+            <h2 class="heading" data-es="CONCEPTO" data-en="CONCEPT">CONCEPTO</h2>
+            <p class="text__works"
+              data-es="Dado que la panadería está ubicada en Córdoba y apunta a clientes que buscan una experiencia especial y artesanal, apuntamos a una atmósfera cálida pero refinada, en lugar del aspecto estéril de una pastelera típica, inspirándonos en la estética de las patisseries europeas. Para el visual principal, fotografiamos una selección cuidadosamente organizada de los productos artesanales e ingredientes de la panadería, transmitiendo tanto la habilidad artesanal como la atención al detalle, con un resultado de estilo editorial digno de revista. La paleta de colores principal fue tomada de las tonalidades del interior de la propia panadería, sutilmente profundizadas, para que la identidad visual del sitio se sienta como una extensión natural del espacio físico."
+              data-en="Since the bakery is located in Córdoba and targets customers looking for a special, artisanal experience, we aimed for a warm yet refined atmosphere rather than the sterile look of a typical pastry shop — drawing inspiration from the aesthetic of European patisseries. For the key visual, we photographed a carefully arranged selection of the bakery’s handcrafted products and ingredients, conveying both craftsmanship and attention to detail while achieving a magazine-worthy, editorial feel. The main color palette was derived from the tones found inside the bakery itself, subtly deepened, so that the website’s visual identity feels like a seamless extension of the physical space.">
+              Dado que la panadería está ubicada en Córdoba y apunta a clientes que buscan una experiencia especial y
+              artesanal, apuntamos a una atmósfera cálida pero refinada, en lugar del aspecto estéril de una pastelera
+              típica, inspirándonos en la estética de las patisseries europeas. Para el visual principal, fotografiamos
+              una selección cuidadosamente organizada de los productos artesanales e ingredientes de la panadería,
+              transmitiendo tanto la habilidad artesanal como la atención al detalle, con un resultado de estilo
+              editorial digno de revista. La paleta de colores principal fue tomada de las tonalidades del interior de
+              la propia panadería, sutilmente profundizadas, para que la identidad visual del sitio se sienta como una
+              extensión natural del espacio físico.</p>
           </div>
         </div>
         <div class="big-image"></div>
         <div class="text">
           <p class="heading-num">02</p>
           <div class="text__wrap">
-            <h2 class="heading heading--left">DEVELOPMENT</h2>
-            <p class="text__works">
-              For the development of the website, we kept the technical stack intentionally lightweight
-              and dependency-free. Rather than relying on external plugins or a CMS, the entire site
-              was built as a single, self-contained HTML file — keeping load times fast and the
-              codebase easy to maintain. Scroll animations and interactive elements were handled
-              with vanilla CSS and minimal JavaScript, and all assets are served statically via
-              GitHub Pages, making deployment and future updates straightforward.
-            </p>
+            <h2 class="heading heading--left" data-es="DESARROLLO" data-en="DEVELOPMENT">DESARROLLO</h2>
+            <p class="text__works"
+              data-es="Para el desarrollo del sitio mantuvimos el stack técnico intencionalmente liviano y sin dependencias externas. En lugar de depender de plugins o un CMS, el sitio fue construido como un único archivo HTML autocontenido, manteniendo tiempos de carga rápidos y el código fácil de mantener. Las animaciones de scroll y los elementos interactivos fueron resueltos con CSS y JavaScript minimal, y todos los recursos son servidos estáticamente mediante GitHub Pages, haciendo que el despliegue y las actualizaciones futuras sean directos."
+              data-en="For the development of the website, we kept the technical stack intentionally lightweight and dependency-free. Rather than relying on external plugins or a CMS, the entire site was built as a single, self-contained HTML file — keeping load times fast and the codebase easy to maintain. Scroll animations and interactive elements were handled with vanilla CSS and minimal JavaScript, and all assets are served statically via GitHub Pages, making deployment and future updates straightforward.">
+              Para el desarrollo del sitio mantuvimos el stack técnico intencionalmente liviano y sin dependencias
+              externas. En lugar de depender de plugins o un CMS, el sitio fue construido como un único archivo HTML
+              autocontenido, manteniendo tiempos de carga rápidos y el código fácil de mantener. Las animaciones de
+              scroll y los elementos interactivos fueron resueltos con CSS y JavaScript minimal, y todos los recursos
+              son servidos estáticamente mediante GitHub Pages, haciendo que el despliegue y las actualizaciones futuras
+              sean directos.</p>
           </div>
         </div>
-        <div class="content content--mlarge back-btn-wrap"><a class="back-btn" href="index.html#works">BACK</a></div>
+        <div class="content content--mlarge back-btn-wrap"><a class="back-btn" href="index.html#works" data-es="VOLVER"
+            data-en="BACK">VOLVER</a></div>
       </section>
     </div>
   </main>
@@ -132,6 +141,7 @@
   <script src="assets/js/parallax.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/barba.js/1.0.0/barba.min.js"></script>
   <script src="assets/js/common.min.js"></script>
+  <script src="assets/js/lang.js"></script>
 </body>
 
 </html>
