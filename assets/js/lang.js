@@ -65,4 +65,19 @@
     } else {
         init();
     }
+
+    // Barba.js integration: Re-apply language when a new container is ready
+    if (typeof Barba !== 'undefined' && Barba.Dispatcher) {
+        Barba.Dispatcher.on('newPageReady', function() {
+            init();
+        });
+    }
+
+    // Expose globally just in case
+    window.LangSwitcher = {
+        init: init,
+        apply: applyLang,
+        get: getLang,
+        set: setLang
+    };
 })();
